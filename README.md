@@ -1,5 +1,5 @@
 # KotlinPref
-https://jitpack.io/#matsudamper/KotlinPref
+[![](https://jitpack.io/v/matsudamper/KotlinPref.svg)](https://jitpack.io/#matsudamper/KotlinPref)
 
 # Usage
 ```groovy
