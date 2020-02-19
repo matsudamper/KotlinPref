@@ -3,8 +3,8 @@ package net.matsudamper.kotlinpref
 import android.content.Context
 import android.content.SharedPreferences
 
-open class KotlinPrefModel(context: Context) {
-    open val fileName: String = javaClass.simpleName
+open class KotlinPrefModel(context: Context, prefix: String = "") {
+    open val fileName: String = "${prefix}-${javaClass.name}"
     open val mode: Int = Context.MODE_PRIVATE
 
     val functions = mutableMapOf<String, () -> Unit>()
