@@ -12,7 +12,7 @@ class GeneralPref(context: Context) : KotlinPrefModel(context) {
     }
 
     var colorState: ColorState by enumPref(ColorState.YELLOW)
-    val repeatStateLiveData by lazy {
+    val colorStateLiveData by lazy {
         enumPrefLiveData(default = ColorState.YELLOW, key = GeneralPref::colorState.name)
     }
 
